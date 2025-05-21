@@ -6,14 +6,14 @@ void torre(int n){
             return;
         }
         printf("direita\n");
-        torre(n -1);
+        torre(n -1); // funcao recursiva para repetir o conteudo da funcao com n-1
 }
 
 
 void bispo(int j){
 
     if( j <= 0){
-        printf("Fim movimento Bispo\n");
+        printf("Fim movimento Bispo\n"); // mensagem para sinalizar que o movimento do bispo foi encerrado
         return;
     }
     printf("Cima, Direita\n");
@@ -36,7 +36,7 @@ void cavalo (int c){
     for(int x = 0; x < 1; x++){
         if(c <= 0){
         printf("Insira valor > 0\n");
-        break;
+        break; // break para interromper o loop caso o valor de n seja < 0;
     }
         for(int j = 0; j < c; j++){
             printf("cima\n");
@@ -48,7 +48,6 @@ void cavalo (int c){
 }
 
 int main(){
-
     int n = 5;
     int j = 5;
     int r = 8;
@@ -57,5 +56,4 @@ int main(){
     bispo(j);
     rainha(r);
     cavalo(c);
-    
 }
